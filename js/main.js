@@ -1730,14 +1730,14 @@
                 },
                 markerStyle: {
                     initial: {
-                        fill: '#a1c749',
-                        stroke: '#a1c749',
+                        fill: '#1b5324',
+                        stroke: '#1b5324',
                         "stroke-width": 5,
                         r: 3
                     },
                     hover: {
-                        fill: '#a1c749',
-                        stroke: '#a1c749',
+                        fill: '#1b5324',
+                        stroke: '#1b5324',
                         "stroke-width": 4,
                         r: 6
                     }
