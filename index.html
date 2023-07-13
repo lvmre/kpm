@@ -1,880 +1,472 @@
-<!DOCTYPE html>
-<html lang="en">
+﻿<!DOCTYPE html>
+
+<html class="no-js">
+<!--<![endif]-->
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Kavai Precious Metal (KPM) Limited</title>
+	<title>Kavai Precious Metal (KPM) </title>
+	<meta charset="utf-8">
 
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-  <link rel="manifest" href="assets/favicon/site.webmanifest">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="format-detection" content="telephone=no">
 
-  <!--stylesheet-->
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/css/all.min.css">
-  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-  <link rel="stylesheet" href="assets/css/style.css">
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="images/favicon.jpg">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/animations.css">
+	<link rel="stylesheet" href="css/font-awesome5.css">
+	<link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="css/main.css" class="color-switcher-link">
+	<link rel="stylesheet" href="css/shop.css" class="color-switcher-link">
+	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+	<!--[if lt IE 9]>
+		<script src="js/vendor/html5shiv.min.js"></script>
+		<script src="js/vendor/respond.min.js"></script>
+		<script src="js/vendor/jquery-1.12.4.min.js"></script>
+	<![endif]-->
+
 </head>
 
 <body>
+	<!--[if lt IE 9]>
+		<div class="bg-danger text-center">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" class="color-main">upgrade your browser</a> to improve your experience.</div>
+	<![endif]-->
 
-  <!--preloader start-->
-  <div class="preloader">
-    <img src="assets/images/kpmlogo.png" alt="image">
-  </div>
-  <!--preloader end-->
+	<div class="preloader">
+		<div class="preloader_image"></div>
+	</div>
 
-  <!--header section start-->
-  <header class="header header-1">
-    <div class="container">
-      <div class="header__wrapper">
-        <div class="header__logo">
-          <a href="index.html">
-            <img src="assets/images/kpmlogo.png" alt="logo">
-          </a>
-        </div>
-        <div class="header__nav">
-          <ul class="header__nav-primary">
-            <li><a href="index.html"><i class="fad fa-home-alt"></i></a></li>
-            <li class="nav__dropdown dropdown-wrapper" id="menu-1">
-              <a href="#" class="nav__dropdown-info dropdown-info">
-                Home
-              </a>
-              <ul class="nav__dropdown-box dropdown-box">
-                <li><a href="index.html">About</a></li>
-                <li><a href="index2.html">Services</a></li>
-                <li><a href="index2.html">Investor Relations</a></li>
-                <li><a href="index2.html">ESG</a></li>
-                <li><a href="index2.html">Contact</a></li>
-              </ul>
-            </li>
-            <li class="nav__dropdown dropdown-wrapper" id="menu-2">
-              <a href="#" class="nav__dropdown-info dropdown-info">
-                About
-              </a>
-              <ul class="nav__dropdown-box dropdown-box">
-                <li><a href="index.html">The Company</a></li>
-                <li><a href="index2.html">HQ & Locations</a></li>
-                <li><a href="index2.html">Quality Assurance</a></li>
-              </ul>
-            </li>
-            <li class="nav__dropdown dropdown-wrapper" id="menu-2">
-              <a href="#feature" class="nav__dropdown-info dropdown-info">
-                Services
-              </a>
-              <ul class="nav__dropdown-box dropdown-box">
-                <li><a href="blog.html">Geological Exploration</a></li>
-                <li><a href="blog-single.html">Mining Processing</a></li>
-                <li><a href="blog.html">Mining Metallurgy Research</a></li>
-                <li><a href="blog-single.html">Mining Processing</a></li>
-                <li><a href="blog-single.html">Property Acquisition</a></li>
-                <li><a href="blog-single.html">Products Benefaction</a></li>
-                <li><a href="blog-single.html">Mining Investment Fund</a></li>
-                <li><a href="blog-single.html">Minting and Vaulting</a></li>
+	<!-- search modal -->
+	<div class="modal" tabindex="-1" role="dialog" aria-labelledby="search_modal" id="search_modal">
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		</button>
+		<div class="widget widget_search">
+			<form method="get" class="searchform search-form" action="/">
+				<div class="form-group">
+					<input type="text" value="" name="search" class="form-control" placeholder="Search keyword" id="modal-search-input">
+				</div>
+				<button type="submit" class="btn">Search</button>
+			</form>
+		</div>
+	</div>
+	<div id="team-form" class="ds modal">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 offset-md-3">
+					<div class="form-wrapper ls rounded">
+						<form class="contact-form" method="post" action="/">
+							<div class="row c-mb-20">
+								<div class="col-12 form-title text-center form-builder-item">
+									<div class="header title">
+										<h4><span class="thin">Contact</span> me</h4>
+									</div>
+								</div>
+							</div>
+							<div class="row c-mb-20">
+								<div class="col-sm-12">
+									<div class="form-group has-placeholder">
+										<label for="name333">Full Name <span class="required">*</span></label>
+										<input type="text" aria-required="true" size="30" value="" name="name" id="name333" class="form-control" placeholder="Your name">
+									</div>
+								</div>
+								<div class="col-sm-12">
+									<div class="form-group has-placeholder">
+										<label for="phone35533">Email address<span class="required">*</span></label>
+										<input type="tel" aria-required="true" size="30" name="phone" id="phone35533" class="form-control" placeholder="Phone Number">
+									</div>
+								</div>
+							</div>
+							<div class="row c-mb-20">
+								<div class="col-sm-12">
+									<div class="form-group has-placeholder">
+										<label for="message333">Message</label>
+										<textarea aria-required="true" rows="3" cols="45" name="message" id="message333" class="form-control" placeholder="Message"></textarea>
+									</div>
+								</div>
+							</div>
+							<div class="row c-mb-20">
+								<div class="col-sm-12 mb-0 mt-10 text-center">
+									<div class="form-group">
+										<input class="btn btn-gradient" type="submit" value="Contact me">
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
 
-              </ul>
-            </li>
-            <li><a href="#feedback">Investor Relations</a></li>
-            <li><a href="#faq">ESG</a></li>
-            <li><a href="#faq">Contact</a></li>
-          </ul>
-          <span><i class="fas fa-times"></i></span>
-        </div>
-        <div class="header__bars">
-          <div class="header__bars-bar header__bars-bar-1"></div>
-          <div class="header__bars-bar header__bars-bar-2"></div>
-          <div class="header__bars-bar header__bars-bar-3"></div>
-        </div>
-      </div>
-    </div>
-  </header>
-  <!--header section end-->
+				</div>
+			</div>
 
-  <!--hero section start-->
-  <section class="hero">
-    <div class="hero__wrapper">
-      <div class="container">
-        <div class="row align-items-lg-center">
-          <div class="col-lg-6 order-2 order-lg-1">
-            <h1 class="main-heading color-black">Unearthing Value, Crafting Legacy</h1>
-            <p class="paragraph"><span>Kavai Precious Metals<sup>TM</sup></span> continuously invests in cutting-edge technology and the development of our human capital to stay ahead in the ever-evolving mining industry.</p>
-            <div class="download-buttons">
-              <a href="#" class="google-play">
-                <i class="fab fa-google-play"></i>
-                <div class="button-content">
-                  <h6>GET IT ON <span>Google Play</span></h6>
-                </div>
-              </a>
-              <a href="#" class="apple-store">
-                <i class="fab fa-apple"></i>
-                <div class="button-content">
-                  <h6>GET IT ON <span>Apple Store</span></h6>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-6 order-1 order-lg-2">
-            <div class="questions-img hero-img">
-              <img src="assets/images/logokpm.png" alt="image">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!--hero section end-->
 
-  <!--feature section start-->
-  <section class="feature" id="intro">
-    <div class="container">
-      <h2 class="section-heading color-black">Get surprised by amazing features.</h2>
-      <div class="row">
-        <div class="col-lg-3 col-md-6">
-          <div class="feature__box feature__box--1">
-            <div class="icon icon-1">
-              <i class="fad fa-user-astronaut"></i>
-            </div>
-            <div class="feature__box__wrapper">
-              <div class="feature__box--content feature__box--content-1">
-                <h3>Join in Easy Steps</h3>
-                <p class="paragraph dark">Suisque metus tortor ultricies ac ligula neced eleifend sodales felise morbi
-                  nec tempor isvelultricies ligula.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="feature__box feature__box--2">
-            <div class="icon icon-2">
-              <i class="fad fa-lightbulb-on"></i>
-            </div>
-            <div class="feature__box__wrapper">
-              <div class="feature__box--content feature__box--content-2">
-                <h3>Track Your Progress</h3>
-                <p class="paragraph dark">Euisque metus tortor ultricies ac ligula neced eleifend sodales felise morbi
-                  nec tempor isvel ultricies ligula.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="feature__box feature__box--3">
-            <div class="icon icon-3">
-              <i class="fad fa-solar-system"></i>
-            </div>
-            <div class="feature__box__wrapper">
-              <div class="feature__box--content feature__box--content-3">
-                <h3>Improve Your Growth</h3>
-                <p class="paragraph dark">Auisque metus tortor ultricies ac ligula neced eleifend sodales felise morbi
-                  nec tempor isvel ultricies ligula.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="feature__box feature__box--4">
-            <div class="icon icon-4">
-              <i class="fad fa-rocket-launch"></i>
-            </div>
-            <div class="feature__box__wrapper">
-              <div class="feature__box--content feature__box--content-4">
-                <h3>Become an Inspiration</h3>
-                <p class="paragraph dark">Tuisque metus tortor ultricies ac ligula neced eleifend sodales felise morbi
-                  nec tempor isvel ultricies ligula.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!--feature section end-->
+		</div>
 
-  <!--video section start-->
-  <div class="video" id="video">
-    <div class="video__wrapper">
-      <div class="container">
-        <div class="video__play">
-          <button type="button" data-toggle="modal" data-target="#videoModal">
-            <i class="fad fa-play"></i>
-          </button>
-          <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-              <div class="modal-content">
-                <div class="modal-close">
-                  <button type="button" data-dismiss="modal" aria-label="Close">
-                    <i class="fas fa-times"></i>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  <div class="ytdefer yt-video" style="width: 100%; height: 100%;" data-src="2BrCE_zxM0U"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="video__background">
-          <img src="assets/images/video-bg-1.png" alt="image" class="texture-1">
-          <img src="assets/images/video-img.png" alt="image" class="phone">
-          <img src="assets/images/video-bg-2.png" alt="image" class="texture-2">
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--video section end-->
 
-  <!--growth section start-->
-  <section class="growth" id="feature">
-    <div class="growth__wrapper">
-      <div class="container">
-        <h2 class="section-heading color-black">App that assists exponential growth.</h2>
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="growth__box">
-              <div class="icon">
-                <i class="fad fa-user-astronaut"></i>
-              </div>
-              <div class="content">
-                <h3>Start Easily</h3>
-                <p class="paragraph dark">Auisque metus tortor ultricies ac ligula neced eleifend sodales felise.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="growth__box">
-              <div class="icon">
-                <i class="fad fa-lightbulb-on"></i>
-              </div>
-              <div class="content">
-                <h3>Improve Growth</h3>
-                <p class="paragraph dark">Kuisque metus tortor ultricies ac ligula neced eleifend sodales felise.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="growth__box">
-              <div class="icon">
-                <i class="fad fa-solar-system"></i>
-              </div>
-              <div class="content">
-                <h3>Create Algorithms</h3>
-                <p class="paragraph dark">Nuisque metus tortor ultricies ac ligula neced eleifend sodales felise.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="growth__box">
-              <div class="icon">
-                <i class="fad fa-backpack"></i>
-              </div>
-              <div class="content">
-                <h3>Expand Portfolio</h3>
-                <p class="paragraph dark">Euisque metus tortor ultricies ac ligula neced eleifend sodales felise.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="growth__box">
-              <div class="icon">
-                <i class="fad fa-rocket-launch"></i>
-              </div>
-              <div class="content">
-                <h3>Share Statistics</h3>
-                <p class="paragraph dark">Buisque metus tortor ultricies ac ligula neced eleifend sodales felise.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="growth__box">
-              <div class="icon">
-                <i class="fad fa-user-astronaut"></i>
-              </div>
-              <div class="content">
-                <h3>Measure Results</h3>
-                <p class="paragraph dark">Suisque metus tortor ultricies ac ligula neced eleifend sodales felise.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="button__wrapper">
-            <a href="#" class="button">
-              <span>GET STARTED <i class="fad fa-long-arrow-right"></i></span>
-            </a>
-            <a href="#" class="button">
-              <span>LEARN MORE <i class="fad fa-long-arrow-right"></i></span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!--growth section end-->
+	</div>
 
-  <!--step section start-->
-  <section class="step">
-    <div class="step__wrapper">
-      <div class="container">
-        <h2 class="section-heading color-black">Jumpstart your growth in just few clicks.</h2>
-        <div class="row">
-          <div class="col-lg-4">
-            <div class="step__box">
-              <div class="image">
-                <img src="assets/images/phone-01.png" alt="image">
-              </div>
-              <div class="content">
-                <h3>EASY TO<span>Register.</span></h3>
-                <p class="paragraph dark">Join the app in 3 easy steps and get
-                  started with your progresso daily.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="step__box">
-              <div class="image">
-                <img src="assets/images/phone-02.png" alt="image">
-              </div>
-              <div class="content">
-                <h3>SIMPLE TO<span>Create.</span></h3>
-                <p class="paragraph dark">Once you’re signed up you can create
-                  as many polls you want to watch.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="step__box">
-              <div class="image">
-                <img src="assets/images/phone-03.png" alt="image">
-              </div>
-              <div class="content">
-                <h3>FUN TO<span>Measure.</span></h3>
-                <p class="paragraph dark">Share your growth results with your
-                  friends and inspre others.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="button__wrapper">
-            <a href="#" class="button">
-              <span>GET STARTED <i class="fad fa-long-arrow-right"></i></span>
-            </a>
-            <a href="#" class="button">
-              <span>LEARN MORE <i class="fad fa-long-arrow-right"></i></span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!--step section end-->
 
-  <!--client section start-->
-  <section class="clients-sec" id="feedback">
-    <div class="container">
-      <h2 class="section-heading color-black">Hear from what others had to say.</h2>
-      <div class="testimonial__wrapper">
-        <div class="client client-01 active">
-          <div class="image">
-            <img src="assets/images/testimonial-img-01.png" alt="image">
-          </div>
-          <div class="testimonial">
-            <div class="testimonial__wrapper">
-              <p>“One Hath. Second. Kind them you fourth, fly brought. Give very let. Dominion wherein after can't fill,
-                unto brought waters air. And our Beast won't dry there have after it. You have herb shall creeping bring
-                sixth tree she'd open.”</p>
-              <h4>— DAVID SPADE</h4>
-            </div>
-          </div>
-        </div>
-        <div class="client client-02">
-          <div class="image">
-            <img src="assets/images/testimonial-img-02.png" alt="image">
-          </div>
-          <div class="testimonial">
-            <div class="testimonial__wrapper">
-              <p>“One Hath. Second. Kind them you fourth, fly brought. Give very let. Dominion wherein after can't fill,
-                unto brought waters air. And our Beast won't dry there have after it. You have herb shall creeping bring
-                sixth tree she'd open.”</p>
-              <h4>— DAVID SPADE</h4>
-            </div>
-          </div>
-        </div>
-        <div class="client client-03">
-          <div class="image">
-            <img src="assets/images/testimonial-img-03.png" alt="image">
-          </div>
-          <div class="testimonial">
-            <div class="testimonial__wrapper">
-              <p>“One Hath. Second. Kind them you fourth, fly brought. Give very let. Dominion wherein after can't fill,
-                unto brought waters air. And our Beast won't dry there have after it. You have herb shall creeping bring
-                sixth tree she'd open.”</p>
-              <h4>— DAVID SPADE</h4>
-            </div>
-          </div>
-        </div>
-        <div class="client client-04">
-          <div class="image">
-            <img src="assets/images/testimonial-img-04.png" alt="image">
-          </div>
-          <div class="testimonial">
-            <div class="testimonial__wrapper">
-              <p>“One Hath. Second. Kind them you fourth, fly brought. Give very let. Dominion wherein after can't fill,
-                unto brought waters air. And our Beast won't dry there have after it. You have herb shall creeping bring
-                sixth tree she'd open.”</p>
-              <h4>— DAVID SPADE</h4>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="clients">
-        <div class="clients__info">
-          <h3>47,000+</h3>
-          <p class="paragraph dark">Customers in over 90 countries are growing their businesses with us.</p>
-        </div>
-        <div class="swiper-container clients-slider">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide clients-slide">
-              <a href="#"><img src="assets/images/client-img.png" alt="image"></a>
-            </div>
-            <div class="swiper-slide clients-slide">
-              <a href="#"><img src="assets/images/client-img.png" alt="image"></a>
-            </div>
-            <div class="swiper-slide clients-slide">
-              <a href="#"><img src="assets/images/client-img.png" alt="image"></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!--client section end-->
+	<!-- Unyson messages modal -->
+	<div class="modal fade" tabindex="-1" role="dialog" id="messages_modal">
+		<div class="fw-messages-wrap ls p-normal">
+			<!-- Uncomment this UL with LI to show messages in modal popup to your user: -->
+			<!--
+		<ul class="list-unstyled">
+			<li>Message To User</li>
+		</ul>
+		-->
 
-  <!--questions section start-->
-  <section class="questions" id="faq">
-    <div class="questions__wrapper">
-      <div class="container">
-        <h2 class="section-heading color-black">Some frequently asked questions.</h2>
-        <div class="row align-items-lg-center">
-          <div class="col-lg-6 order-2 order-lg-1">
-            <div id="accordion">
-              <div class="card" id="card-1">
-                <div class="card-header" id="heading-1">
-                  <h5 class="mb-0">
-                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapse-1" aria-expanded="true"
-                      aria-controls="collapse-1">
-                      How does algorithms work?
-                    </button>
-                  </h5>
-                </div>
+		</div>
+	</div><!-- eof .modal -->
 
-                <div id="collapse-1" class="collapse show" aria-labelledby="heading-1" data-parent="#accordion">
-                  <div class="card-body">
-                    <p class="paragraph">With increasing calls for government accountability and cost savings, agencies
-                      are contending with a mountain
-                      of rule and policy changes affecting everything from pensions and benefits, to client eligibility
-                      and oversight.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="card" id="card-2">
-                <div class="card-header" id="heading-2">
-                  <h5 class="mb-0 hidden">
-                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse-2"
-                      aria-expanded="false" aria-controls="collapse-2">
-                      What is a business rules engine?
-                    </button>
-                  </h5>
-                </div>
-                <div id="collapse-2" class="collapse" aria-labelledby="heading-2" data-parent="#accordion">
-                  <div class="card-body">
-                    <p class="paragraph">With increasing calls for government accountability and cost savings, agencies
-                      are contending with a mountain
-                      of rule and policy changes affecting everything from pensions and benefits, to client eligibility
-                      and oversight.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="card" id="card-3">
-                <div class="card-header" id="heading-3">
-                  <h5 class="mb-0 hidden">
-                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse-3"
-                      aria-expanded="false" aria-controls="collapse-3">
-                      How are datadirect drivers different?
-                    </button>
-                  </h5>
-                </div>
-                <div id="collapse-3" class="collapse" aria-labelledby="heading-3" data-parent="#accordion">
-                  <div class="card-body">
-                    <p class="paragraph">With increasing calls for government accountability and cost savings, agencies
-                      are contending with a mountain
-                      of rule and policy changes affecting everything from pensions and benefits, to client eligibility
-                      and oversight.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="card" id="card-4">
-                <div class="card-header" id="heading-4">
-                  <h5 class="mb-0 hidden">
-                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse-4"
-                      aria-expanded="false" aria-controls="collapse-4">
-                      How do determine agencies compliance?
-                    </button>
-                  </h5>
-                </div>
-                <div id="collapse-4" class="collapse" aria-labelledby="heading-4" data-parent="#accordion">
-                  <div class="card-body">
-                    <p class="paragraph">With increasing calls for government accountability and cost savings, agencies
-                      are contending with a mountain
-                      of rule and policy changes affecting everything from pensions and benefits, to client eligibility
-                      and oversight.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="card" id="card-5">
-                <div class="card-header" id="heading-5">
-                  <h5 class="mb-0 hidden">
-                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse-5"
-                      aria-expanded="false" aria-controls="collapse-5">
-                      How are datadirect drivers different?
-                    </button>
-                  </h5>
-                </div>
-                <div id="collapse-5" class="collapse" aria-labelledby="heading-5" data-parent="#accordion">
-                  <div class="card-body">
-                    <p class="paragraph">With increasing calls for government accountability and cost savings, agencies
-                      are contending with a mountain
-                      of rule and policy changes affecting everything from pensions and benefits, to client eligibility
-                      and oversight.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="card" id="card-6">
-                <div class="card-header" id="heading-6">
-                  <h5 class="mb-0 hidden">
-                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse-6"
-                      aria-expanded="false" aria-controls="collapse-6">
-                      What is a business rules engine?
-                    </button>
-                  </h5>
-                </div>
-                <div id="collapse-6" class="collapse" aria-labelledby="heading-6" data-parent="#accordion">
-                  <div class="card-body">
-                    <p class="paragraph">With increasing calls for government accountability and cost savings, agencies
-                      are contending with a mountain
-                      of rule and policy changes affecting everything from pensions and benefits, to client eligibility
-                      and oversight.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="card" id="card-7">
-                <div class="card-header" id="heading-7">
-                  <h5 class="mb-0 hidden">
-                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse-7"
-                      aria-expanded="false" aria-controls="collapse-7">
-                      What are the types of datadirect drivers?
-                    </button>
-                  </h5>
-                </div>
-                <div id="collapse-7" class="collapse" aria-labelledby="heading-7" data-parent="#accordion">
-                  <div class="card-body">
-                    <p class="paragraph">With increasing calls for government accountability and cost savings, agencies
-                      are contending with a mountain
-                      of rule and policy changes affecting everything from pensions and benefits, to client eligibility
-                      and oversight.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 order-1 order-lg-2">
-            <div class="questions-img">
-              <img src="assets/images/phone-01.png" alt="image">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!--questions section end-->
+	<!-- wrappers for visual page editor and boxed version of template -->
+	<div id="canvas">
+		<div id="box_wrapper">
 
-  <!--pricing section start-->
-  <section class="pricing" id="pricing">
-    <div class="pricing__wrapper">
-      <h2 class="section-heading color-black">Easy pricing plans for your needs.</h2>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4">
-            <div class="pricing__single pricing__single-1">
-              <div class="icon">
-                <i class="fad fa-user-graduate"></i>
-              </div>
-              <h4>LEARNER</h4>
-              <h3>$0.00</h3>
-              <h6>1 to 2 users</h6>
-              <div class="list">
-                <ul>
-                  <li>20 polls per month</li>
-                  <li>1 email address</li>
-                  <li>2GB cloud storage</li>
-                  <li class="not-included">No customer support</li>
-                  <li class="not-included">Extra features</li>
-                  <li class="not-included">In-app products</li>
-                </ul>
-              </div>
-              <a href="#" class="button">
-                <span>GET STARTED <i class="fad fa-long-arrow-right"></i></span>
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="pricing__single pricing__single-2">
-              <div class="icon">
-                <i class="fad fa-user-cowboy"></i>
-              </div>
-              <h4>COWBOY</h4>
-              <h3>$10.00</h3>
-              <h6>3 to 19 users</h6>
-              <div class="list">
-                <ul>
-                  <li>20 polls per month</li>
-                  <li>1 email address</li>
-                  <li>2GB cloud storage</li>
-                  <li>No customer support</li>
-                  <li class="not-included">Extra features</li>
-                  <li class="not-included">In-app products</li>
-                </ul>
-              </div>
-              <a href="#" class="button">
-                <span>GET STARTED <i class="fad fa-long-arrow-right"></i></span>
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="pricing__single pricing__single-3">
-              <div class="icon">
-                <i class="fad fa-user-astronaut"></i>
-              </div>
-              <h4>ASTRONAUT</h4>
-              <h3>$20.00</h3>
-              <h6>20 to 50 users</h6>
-              <div class="list">
-                <ul>
-                  <li>20 polls per month</li>
-                  <li>1 email address</li>
-                  <li>2GB cloud storage</li>
-                  <li>No customer support</li>
-                  <li>Extra features</li>
-                  <li>In-app products</li>
-                </ul>
-              </div>
-              <a href="#" class="button">
-                <span>GET STARTED <i class="fad fa-long-arrow-right"></i></span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!--pricing section end-->
+			<!-- template sections -->
 
-  <!--screenshot section start-->
-  <section class="screenshot" id="preview">
-    <div class="screenshot__wrapper">
-      <div class="container">
-        <div class="screenshot__info">
-          <h2 class="section-heading color-black">Have a look at what’s inside the app.</h2>
-          <div class="screenshot-nav">
-            <div class="screenshot-nav-prev"><i class="fad fa-long-arrow-left"></i></div>
-            <div class="screenshot-nav-next"><i class="fad fa-long-arrow-right"></i></div>
-          </div>
-        </div>
-      </div>
-      <div class="swiper-container screenshot-slider">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide screenshot-slide">
-            <img src="assets/images/phone-01.png" alt="image">
-          </div>
-          <div class="swiper-slide screenshot-slide">
-            <img src="assets/images/phone-02.png" alt="image">
-          </div>
-          <div class="swiper-slide screenshot-slide">
-            <img src="assets/images/phone-03.png" alt="image">
-          </div>
-          <div class="swiper-slide screenshot-slide">
-            <img src="assets/images/phone-04.png" alt="image">
-          </div>
-          <div class="swiper-slide screenshot-slide">
-            <img src="assets/images/phone-05.png" alt="image">
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!--screenshot section end-->
+			<!--topline section visible only on small screens|-->
 
-  <!--related blog section start-->
-  <section class="related-blog blog">
-    <div class="related-blog__wrapper">
-      <h2 class="section-heading color-black">Read latest news from our blog.</h2>
-      <div class="blog__content">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-4">
-              <a href="blog-single.html">
-                <div class="blog__single blog__single--1">
-                  <div class="blog__single-image">
-                    <img src="assets/images/blog-img-1.png" alt="image">
-                  </div>
-                  <div class="blog__single-info">
-                    <h3>New features coming in 2020 to our app.</h3>
-                    <h4>12 <i class="fad fa-comment"></i><span>|</span>Dec 17, 2020</h4>
-                    <p class="paragraph dark">Suisque metus tortor ultricies ac ligula neced
-                      eleifend dales felise morbi nec tempor isvel ultricies lideula. </p>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="col-lg-8">
-              <a href="blog-single.html">
-                <div class="blog__single blog__single--2">
-                  <div class="blog__single-image">
-                    <img src="assets/images/blog-img-2.png" alt="image">
-                  </div>
-                  <div class="blog__single-info">
-                    <h3>New features coming in 2020 to our app.</h3>
-                    <h4>12 <i class="fad fa-comment"></i><span>|</span>Dec 17, 2020</h4>
-                    <p class="paragraph dark">Suisque metus tortor ultricies ac ligula neced
-                      eleifend dales felise morbi nec tempor isvel ultricies lideula. </p>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <a href="blog.html" class="button">
-        <span>GO TO BLOG <i class="fad fa-long-arrow-right"></i></span>
-      </a>
-    </div>
-  </section>
-  <!--related blog section end-->
+			<div class="header_absolute">
+			
 
-  <!--newsletter section start-->
-  <section class="newsletter">
-    <div class="newsletter__wrapper">
-      <div class="container">
-        <div class="row align-items-lg-center">
-          <div class="col-lg-6">
-            <div class="newsletter__info">
-              <h2 class="section-heading color-black">Subscribe to our newsletter.</h2>
-              <form class="newsletter__info--field">
-                <input type="text" placeholder="Email address" class="input-field">
-                <button class="button"><span>SUBSCRIBE <i class="fad fa-long-arrow-right"></i></span></button>
-              </form>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="newsletter__img">
-              <img src="assets/images/newsletter-img.png" alt="image">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!--newsletter section end-->
+				<header class="page_header header-1 ds bg-transparent s-py-xl-20 s-py-10 ">
 
-  <!--footer start-->
-  <footer class="footer">
-    <div class="footer__wrapper">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4">
-            <div class="footer__info">
-              <div class="footer__info--logo">
-                <img src="assets/images/logokpm.png" alt="image">
-              </div>
-              <div class="footer__info--content">
-                <p class="paragraph dark">Zapper is an app that helps you
-                  organize yourself on the daily basis
-                  using systematic algorithms to
-                  achieve success.</p>
-                <div class="social">
-                  <ul>
-                    <li class="facebook"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                    <li class="twitter"><a href="#"><i class="fab fa-twitter"></i></a></li>
-                    <li class="linkedin"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                    <li class="youtube"><a href="#"><i class="fab fa-youtube"></i></a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-8">
-            <div class="footer__content-wrapper">
-              <div class="footer__list">
-                <ul>
-                  <li>Explore</li>
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">Our Team</a></li>
-                  <li><a href="#">Features</a></li>
-                  <li><a href="#">Blog</a></li>
-                  <li><a href="#">How It Works</a></li>
-                </ul>
-              </div>
-              <div class="footer__list">
-                <ul>
-                  <li>Help</li>
-                  <li><a href="#">FAQ</a></li>
-                  <li><a href="#">Privacy Policy</a></li>
-                  <li><a href="#">Support</a></li>
-                  <li><a href="#">Terms of Service</a></li>
-                  <li><a href="#">Contact</a></li>
-                </ul>
-              </div>
-              <div class="download-buttons">
-                <h5>Download</h5>
-                <a href="#" class="google-play">
-                  <i class="fab fa-google-play"></i>
-                  <div class="button-content">
-                    <h6>GET IT ON <span>Google Play</span></h6>
-                  </div>
-                </a>
-                <a href="#" class="apple-store">
-                  <i class="fab fa-apple"></i>
-                  <div class="button-content">
-                    <h6>GET IT ON <span>Apple Store</span></h6>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="footer__copy">
-            <h6>&copy; KAVAI PRECIOUS</h6>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <!--footer end-->
+					<div class="container-fluid">
 
-  <script src="assets/js/jquery-3.4.1.min.js"></script>
-  <script src="assets/js/popper-1.16.0.min.js"></script>
-  <script src="assets/js/bootstrap.min.js"></script>
-  <script>
-    $(window).on('load', function () {
-      $("body").addClass("loaded");
-    });
-  </script>
-  <script src="assets/js/swiper-bundle.min.js"></script>
-  <script src="assets/js/ytdefer.min.js"></script>
-  <script src="assets/js/script.js"></script>
+						<div class="row d-flex align-items-center justify-content-center">
+							<div class="col-xl-3 col-md-4 col-12 text-center">
+								<a href="./" class="logo">
+									<img style="width: 120px;" src="images/logo-white.png" alt="">
+									
+								</a>
+							</div>
+							<div class="col-xl-6 col-1 text-right">
+								<!-- main nav start -->
+								<nav class="top-nav">
+									<ul class="nav sf-menu">
+
+
+										<li class="active"><a href="./">Home</a></li>
+
+										<li class="active"><a href="#about">About Us</a></li>
+										<li>
+											<a href="#services">Services</a>
+											<ul>
+												<li>
+													<a href="">Geological Exploration </a>
+												</li>
+												<li>
+													<a href="">Mining and Vaulting</a>
+												</li>
+												<li>
+													<a href=""> ESG STRATEGY</a>
+												</li>
+											</ul>
+
+										</li>
+										<li class="active"><a href="#contact">Contact Us</a></li>
+										<!-- eof contacts -->
+									</ul>
+
+
+								</nav>
+								<!-- eof main nav -->
+							</div>
+							<div class="col-xl-3 col-md-7 col-12  d-flex justify-content-md-end">
+								<ul class="top-includes">
+									<li class="metaphone">
+										<a href="#">+ 44 01202 283317</a>
+									</li>
+									<li class="special-menu">
+										
+									</li>
+								</ul>
+
+
+							</div>
+
+						</div>
+
+					</div>
+					<!-- header toggler -->
+					
+				</header>
+			</div>
+
+			<section class="page_slider">
+				<div class="flexslider">
+					<ul class="slides">
+						
+						<li class="ds cover-image">
+							<img src="images/pics/bright-landscape-spring-closeup-nature-tree.jpg" alt="img">
+							<div class="container-fluid">
+								<div class="row">
+									<div class="col-md-12">
+										<div class="intro_layers_wrapper">
+											<div class="intro_layers">
+												<div class="intro_layer">
+													<h6 class="intro_before_featured_word">Kavai Precious Metal (KPM)</h6>
+													<h2 class="text-capitalize intro_featured_word">
+														Exceptional Solutions Driven
+													</h2>
+													<a href="#about" class="btn btn-outline-darkgrey big-btn">learn more</a>
+													
+												</div>
+											</div> <!-- eof .intro_layers -->
+										</div> <!-- eof .intro_layers_wrapper -->
+									</div> <!-- eof .col-* -->
+								</div><!-- eof .row -->
+							</div><!-- eof .container-fluid -->
+						</li>
+						
+					</ul>
+				</div> <!-- eof flexslider -->
+			</section>
+
+			
+			<section id="about" class="ls main-testimonial s-py-xl-160 s-py-lg-130 s-py-md-90 s-py-60">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 col-lg-3 text-center">
+							<h2 class="special-heading text-center">
+								<span class="text-capitalize">
+									About us!
+								</span>
+							</h2>
+							<div class="divider-30"></div>
+							<a class="btn btn-gradient big-btn" href="#">Read more</a>
+						</div>
+						<div class="col-12 col-lg-9 ">
+							<div class="divider-35 hidden-above-lg"></div>
+							<div class="divider--5"></div>
+							<p>Kavai Precious Metal (KPM) Limited is a registered and established mining company with operations in both Africa (Zimbabwe and South Africa) and Europe (United Kingdom). KPM has been guided by strong operational ethics of integrity, transparency and a focus on positioning  KPM as a strategic stakeholder in the value chain of base and rare metals within global markets. <br><br>
+The company’s objectives are to maximise shareholder value through exploration, discovery and development or commercialisation of opportunities in Base and Rare metals in Zimbabwe and beyond. At KPM, we understand the importance of staying at the forefront of industry practices and technological advancements. To this end, we continuously invest in the training and development of our personnel skills and knowledge necessary to leverage new opportunities and navigate evolving market dynamics</p>
+						</div>
+						
+				</div>
+			</section>
+
+			<section id="services" class="ls  s-py-xl-160 s-py-lg-130 s-py-md-90 s-py-60 text-sm-left text-center container-px-0">
+				<div class="cover-image s-cover-left">
+					<img src="images/pics/johannesburg-south-africa-april-20-2012-manganese-mining-equipment.jpg" alt="01">
+				</div>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-xs-12 col-12 col-lg-6">
+
+						</div>
+						<div class="col-xs-12 col-12 col-lg-6">
+							<div class="content-center">
+								<h2 class="special-heading numeric text-sm-left text-center">
+									<span class="text-capitalize">
+										headquarters & Location
+									</span>
+								</h2>
+								<div class="divider-45 hidden-below-lg"></div>
+								<div class="divider-30 hidden-above-lg"></div>
+								<p>
+									Kavai Precious Metals (KPM) Limited's headquarters is located in Harare, Zimbabwe. KPM has several satellite offices strategically positioned across Zimbabwe along the Great Dyke reef  mineral-rich areas of the country. These offices enable KPM to have a local presence in the areas where we operate, improving the company’s ability to engage stakeholders, manage operations ,conduct efficient exploration, development, and mining activities. 
+KPM has established an Investment Portfolio Management office in South Africa. This office serves as the hub of our investment activities while also supporting mining operations in Zimbabwe. The South African office allows KPM to tap into a wider network of investors and gain a comprehensive understanding of the dynamics of the global mining industry. <br> <br>
+KPM has a global markets office for Commodities located in the United Kingdom. The office serves as the main hub for commodities trading activities, providing access to global markets and increasing the ability to serve the needs of clients worldwide.
+By strategically establishing offices in Zimbabwe, South Africa, and the United Kingdom, Kavai Precious Metals (KPM) Limited leverages local expertise, expands our network, and enhances our ability to deliver value to our stakeholders across the mining value chain.
+
+								</p>
+							
+								<div class="divider--10"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="ls  s-py-xl-160 s-py-lg-130 s-py-md-90 s-py-60 text-sm-left text-center container-px-0">
+				<div class="cover-image s-cover-right">
+					<img src="images/pics/Objectives-Picture.jpg" alt="01">
+				</div>
+
+				<div class="container-fluid">
+					<div class="row">
+
+						<div class="col-xs-12 col-12 col-lg-6">
+							<div class="content-center">
+								<h2 class="special-heading numeric text-sm-left text-center">
+									<span class="text-capitalize">
+										Objectives
+									</span>
+								</h2>
+								<div class="divider-45 hidden-below-lg"></div>
+								<div class="divider-30 hidden-above-lg"></div>
+								<ul class="list-styled">
+								<li>To maintain high quality and complete job satisfaction to our clients.</li>
+								<li>To offer competitive engineering solutions.</li>
+								<li>To have an impact on the reduction of unemployment and poverty in the community.</li>
+								<li>To generate employment opportunities for the less advantaged.</li>
+								<li>To promote skills development.</li>
+								<li>To meet our goals and commitments.</li>
+							</ul>
+							</div>
+						</div>
+						<div class="col-xs-12 col-12 col-lg-6">
+
+
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="ls  s-py-xl-160 s-py-lg-130 s-py-md-90 s-py-60 text-sm-left text-center container-px-0">
+				<div class="cover-image s-cover-left">
+					
+					<img src="images/pics/Why-Choose-Us-Picture.jpg" alt="01">
+				</div>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-xs-12 col-12 col-lg-6">
+
+						</div>
+						<div class="col-xs-12 col-12 col-lg-6">
+							<div class="content-center">
+								<h2 class="special-heading numeric text-sm-left text-center">
+									<span class="text-capitalize">
+										Why Choose Us
+									</span>
+								</h2>
+								<div class="divider-45 hidden-below-lg"></div>
+								<div class="divider-30 hidden-above-lg"></div>
+								<ul class="list-styled">
+								<li>We are committed to excellence.</li>
+								<li>We aim for exceptional outcomes.</li>
+								<li>We meet the needs of our clients.</li>
+							     </ul>
+								 <p>Choosing the right service provider is not just about
+									finding someone who can meet your needs; it’s about
+									finding a trusted partner who understands your vision,
+									shares your values, and consistently delivers
+									exceptional results.</p>
+									<p>Our solutions go beyond the ordinary, they
+										are extraordinary in their ability to address
+										challenges and deliver outstanding
+										results.</p>
+										<p>We believe exceptional solutions require a
+											deep understanding of the problem at
+											hand. After understanding the problem,
+											we offer exceptional solutions that are
+											characterized by attention to detail and
+											relentless pursuit of perfection.</p>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			
+
+			
+			<footer class="page_footer text-center text-sm-left  ds  s-pt-55 s-pb-60 s-pt-md-85 s-pb-md-90 s-pt-lg-125 s-pb-lg-130 s-pt-xl-160 s-pb-xl-155 c-gutter-30 s-parallax c-mb-50 c-mb-lg-0" style="background-position: 50% -15px;">
+				<div class="container">
+					<div class="row justify-content-center">
+
+						<div class="col-lg-5 col-md-6 animate animated fadeInUp" data-animation="fadeInUp">
+							<a href="./" class="logo">
+								<img src="images/logo-white.png" alt="">
+								
+							</a>
+							<div class="widget widget_mailchimp">
+								<p>Kavai Precious Metal (KPM) Limited is a registered and established mining company with operations in both Africa (Zimbabwe and South Africa) and Europe (United Kingdom).</p>
+							</div>
+
+							<a href="#" class="fab fa-facebook-f rounded-icon bg-icon fs-16" title="facebook"></a>
+							<a href="#" class="fab fa-linkedin-in rounded-icon bg-icon fs-16" title="linkedin"></a>
+							<a href="#" class="fab fa-instagram rounded-icon bg-icon fs-16" title="instagram"></a>
+						</div>
+
+						<div id="contact" class="col-lg-5 col-md-6 animate animated fadeInUp" data-animation="fadeInUp">
+
+							<div class="widget widget_icons_list">
+								<h3 class="widget-title">Contact Detail</h3>
+								<ul>
+									<li class="icon-inline ">
+										<div class="icon-styled icon-top   round fs-16">
+											<i class="fas fa-phone"></i>
+										</div>
+										<p>+ 44 01202 283317</p>
+									</li> <br>
+									<li class="icon-inline">
+										<div class="icon-styled icon-top  round  fs-16">
+											<i class="fas fa-envelope"></i>
+
+
+										</div>
+										<p>contact@kpm-mining.com</p>
+									</li><br>
+									<li class="icon-inline">
+										<div class="icon-styled icon-top  round  fs-16">
+											<i class="fas fa-map-marker-alt"></i>
+										</div>
+										<p>
+											<a href="#">144 Holdenhurst,Bournemouth,BH88AS</a>
+										</p>
+									</li>
+
+								</ul>
+							</div>
+						</div>
+
+						<div class="col-lg-2 col-md-6 animate animated fadeInUp" data-animation="fadeInUp">
+
+							<div class="widget widget_nav_menu mb-0">
+								<h3 class="widget-title">Quick Links</h3>
+								<ul class="list-unstyled">
+									<li>
+										<a href="./">Home</a>
+									</li>
+									<li>
+										<a href="#about">About us</a>
+									</li>
+									<li>
+										<a href="#services">Services</a>
+									</li>
+
+									<li>
+										<a href="#contact">Contact Us</a>
+									</li>
+								</ul>
+							</div>
+
+
+						</div>
+
+						
+
+
+					</div>
+				</div>
+
+			</footer>
+			<section class="page_copyright ls ms s-py-15 s-bordertop">
+				<div class="container">
+					<div class="row align-items-center">
+
+						<div class="col-md-12 text-center">
+							<p>© Copyright <span class="copyright_year">2023</span> All Rights Reserved</p>
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+		</div><!-- eof #box_wrapper -->
+	</div><!-- eof #canvas -->
+
+
+
+	<script src="js/compressed.js"></script>
+	<script src="js/main.js"></script>
+	
+
 </body>
 
 </html>
